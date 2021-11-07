@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src='script.js'></script>
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <h1>JavaScript - Interação com elementos</h1>
+
+    <button style="width: 400px; height: 60px"
+    onmousedown="ApertaMouse()" 
+    onmouseup="SoltaMouse()"
+    onmouseover="PassouMouse()"
+    onmouseout="TirouMouse()"
+    onmousemove="MoveuMouse()">Fazer Pedido</button>
+
+    <button style="width: 400px; height: 60px"
+    onClick="onClick()"
+    oncontextmenu="botaoDireito()">Pedido</button>
+
+    <input type="text"
+    onkeydown="TecladoApertado(event)"
+    onkeyup="TecladoSolto(event)"/>
+
+<br/>
+<br/>
+
+<div>
+    <form method="POST" onsubmit="">
+        <h1>Fomulário Cidades</h1>
+        <input type="text" name="nome" onfocus="focado()" onblur="desfocado()"> <br/><br/>
+        
+        <select name="cidades" onchange="opcaoSelecionada(this)">
+            <option>Sao Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Rio Preto</option>
+            <option>Curitiba</option>
+        </select> <br/><br/>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+</body>
+
+</html >
